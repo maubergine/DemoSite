@@ -1,0 +1,38 @@
+Git/SSH setup
+--------------------------------------------------------------------------------------
+Created date:		2013-10-21
+Author:				marius.e.rubin@accenture
+
+Last updated:		2013-10-21
+Last updated by:	marius.e.rubin@accenture.com
+--------------------------------------------------------------------------------------
+
+1.  Download git from http://git-scm.com/downloads.
+2.  Install using default settings.
+3.  Open Git bash (in the folder where you have installed Git).
+4.  Create your SSH public/private key pair by entering the following (press return after each instruction):
+    a)  ssh-keygen -t rsa
+    b)  Don't enter a filename.
+    c)  Enter a memorable passphrase.
+    Should now be done!
+
+In Eclipse:
+
+5.  Go to Window-->Preferences-->General-->Network Connections-->SSH2
+6.  Change SSH2 home to wherever Git bash has created the SSH files.
+7.  Go to the Key Management tab.
+8.  Click Load Existing Key... and select id_rsa.
+9.  In your innersource dashboard go to Manage SSH keys-->Add SSH Key.
+10. Paste the text visible in the Eclipse preference into the box and hit Save.
+
+11. If you have a version of Eclipse earlier than Juno you may need to install the Git plugin (go to Help-->Eclipse marketplace and Search).
+12. Go to Window-->Open Perspective-->Other-->Git Repository Exploring.
+13. Clone a Git repository.
+14. Paste the project URI (git@innersource.accenture.com:pol-ecom/master.git) and set the protocol as ssh
+15. Click Next >
+16. Select the branch you want to clone.
+17. Pick any destination directory - D:\dev\repos\pol-ecom\ is recommended just in case.
+18. Import all the projects via the checkbox if you want, otherwise you can select from the Working Directory folder once cloning is complete.
+
+
+That should be everything!

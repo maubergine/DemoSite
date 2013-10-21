@@ -1,0 +1,17 @@
+Environment Setup
+--------------------------------------------------------------------------------------
+Created date:		2013-10-21
+Author:				marius.e.rubin@accenture
+
+Last updated:		2013-10-21
+Last updated by:	marius.e.rubin@accenture.com
+--------------------------------------------------------------------------------------
+
+JAVA_HOME:	 	Path to your jdk installation directory (parent not bin).
+MAVEN_HOME:		Path to your maven installation directory (parent not bin).
+CATALINA_HOME:	Path to your tomcat installation directory.
+
+PATH:			Add the following to your PATH environment variable:
+				%JAVA_HOME%\bin
+				%MAVEN_HOME%\bin
+				%ANT_HOME%\bin

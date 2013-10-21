@@ -1,0 +1,14 @@
+Eclipse Setup
+--------------------------------------------------------------------------------------
+Created date:		2013-10-21
+Author:				marius.e.rubin@accenture
+
+Last updated:		2013-10-21
+Last updated by:	marius.e.rubin@accenture.com
+--------------------------------------------------------------------------------------
+
+Go to Help/Eclipse Marketplace - find and install maven integration for eclipse (it may already be installed).
+
+In Preferences/Java/Installed JREs make sure that your default JRE is the same as your JDK 7 directory (this makes working with Broadleaf easier).
+In Preferences/Maven/Installations, select the version of maven that you have manually installed. Then in Maven/User Settings ensure that the correct repository is referenced.
+In Preferences/JavaScript/Validator/Errors/Warnings uncheck enable javascript semantic validation (it tends to cause issues and is not a reliable indicator of problems).
